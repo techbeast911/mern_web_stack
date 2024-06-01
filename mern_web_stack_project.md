@@ -8,6 +8,9 @@ Together, they allow for full-stack development using JavaScript throughout.
 
 #### In this project we will create a simple to-do list app
 
+
+![alt text](https://github.com/techbeast911/mern_web_stack/blob/main/img/Screenshot%202024-05-22%20125022.png)
+
 ### Background configuration
 update ubuntu
 
@@ -43,6 +46,9 @@ make a new directory for your To-do project
 
    mkdir Todo
 
+![alt text](https://github.com/techbeast911/mern_web_stack/blob/main/img/Screenshot%202024-05-22%20130702.png)
+
+
 now navigate to our todo directory
 
    cd Todo
@@ -59,6 +65,9 @@ while allowing them to choose additional libraries and tools as needed.
 
     npm install express
 
+![alt text](https://github.com/techbeast911/mern_web_stack/blob/main/img/Screenshot%202024-05-22%20131748.png)
+
+
 create a file index.js with the command below
      touch index.js
 
@@ -66,6 +75,9 @@ create a file index.js with the command below
 install dotenv module
 
      npm install dotenv
+
+![alt text](https://github.com/techbeast911/mern_web_stack/blob/main/img/Screenshot%202024-05-22%20132048.png)
+
 
 
 use vim to open index.js file with
@@ -92,9 +104,16 @@ type the code below into the opened file and save it.
     });
 
 
+![alt text](https://github.com/techbeast911/mern_web_stack/blob/main/img/Screenshot%202024-05-22%20132641.png)
+
+
+
 Now its time to start our server to see if it works,open your terminal in same directory as index.js and type:
 
     node index.js
+
+![alt text](https://github.com/techbeast911/mern_web_stack/blob/main/img/Screenshot%202024-05-22%20133711.png)
+
 
 now we create a custom tcp security rule in aws to open port 5000
 
@@ -123,6 +142,7 @@ Here are the steps to do that:
     Save the Rule:
         Click Save rules to apply the changes
 
+![alt text](https://github.com/techbeast911/mern_web_stack/blob/main/img/Screenshot%202024-05-22%20134852.png)
 
 ### Routes
 there are 3 actions that our to do application needs to be able to do
@@ -173,6 +193,8 @@ paste this code
 
     module.exports = router;
 
+![alt text](https://github.com/techbeast911/mern_web_stack/blob/main/img/Screenshot%202024-05-22%20141048.png)
+
 
 
 
@@ -191,6 +213,8 @@ change directory back to the Todo folder with
 install mongoose
 
   npm install mongoose
+
+![alt text](https://github.com/techbeast911/mern_web_stack/blob/main/img/Screenshot%202024-05-22%20143438.png)
 
 create a new folder with
 
@@ -223,6 +247,8 @@ paste the code in the opened file
   //create model for todo
   const Todo = mongoose.model('todo', TodoSchema);
   module.exports = Todo;
+
+![alt text](https://github.com/techbeast911/mern_web_stack/blob/main/img/Screenshot%202024-05-22%20144606.png)
 
 
 
@@ -260,6 +286,9 @@ now we need to update our routes from the file api.js to make use of the new mod
     });
 
     module.exports = router;
+
+![alt text](https://github.com/techbeast911/mern_web_stack/blob/main/img/Screenshot%202024-05-22%20145235.png)
+
 
 
 mongodb database
@@ -330,6 +359,9 @@ now paste code below
 run 
   node index.js
 
+![alt text](https://github.com/techbeast911/mern_web_stack/blob/main/img/Screenshot%202024-05-23%20171404.png)
+
+
 you will see database connected successfully
 
 
@@ -340,6 +372,7 @@ make sure to header key (content-type as application/json)
 
 post request
 
+![alt text](https://github.com/techbeast911/mern_web_stack/blob/main/img/Screenshot%202024-05-28%20124132.png)
 
 
 
@@ -397,6 +430,14 @@ Interpreting the Response
 
     Response Body: Contains the data returned by the server. For example, if you’re requesting a list of todos, you might see a JSON array of todo items.
 
+![alt text](https://github.com/techbeast911/mern_web_stack/blob/main/img/Screenshot%202024-05-28%20130422.png)
+![alt text]()
+![alt text]()
+![alt text]()
+![alt text]()
+![alt text]()
+![alt text]()
+
 
 
 #### DELETE REQUEST
@@ -447,6 +488,7 @@ Example: Making a DELETE Request
         Click the "Send" button.
         Review the response displayed in the lower half of the Postman interface.
 
+![alt text](https://github.com/techbeast911/mern_web_stack/blob/main/img/Screenshot%202024-05-28%20133034.png)
 
 
 
@@ -491,6 +533,7 @@ in the Todo folder open the package.json and replace the scripts part with code 
     }
     }
     
+![alt text](https://github.com/techbeast911/mern_web_stack/blob/main/img/Screenshot%202024-05-28%20141157.png)
 
 
 #### CONFIGURE PROXY IN PACKAGE.JSON
@@ -512,14 +555,23 @@ add the key value pair of proxy in the package.json
   "proxy": "http://localhost:5000"
  }
 
-  ![alt text](image-1.png)
+![alt text](https://github.com/techbeast911/mern_web_stack/blob/main/img/Screenshot%202024-05-28%20143223.png)
+  
 
 
 ensure you are in your todo directory, 
 
  npm run dev
 
+![alt text](https://github.com/techbeast911/mern_web_stack/blob/main/img/Screenshot%202024-05-28%20143955.png)
+
+
 in order to be able to access it from your browser, you have to open tcp port 3000 
+
+
+![alt text](https://github.com/techbeast911/mern_web_stack/blob/main/img/Screenshot%202024-05-30%20124054.png)
+
+![alt text](https://github.com/techbeast911/mern_web_stack/blob/main/img/Screenshot%202024-05-30%20123853.png)
 
 
 ### CREATING REACT COMPONENTS
@@ -539,6 +591,10 @@ move into the components directory with
 
 in components directory create 3 files
    touch Input.js ListTodo.js Todo.js
+
+![alt text](https://github.com/techbeast911/mern_web_stack/blob/main/img/Screenshot%202024-05-30%20124819.png)
+
+
 
 open Input.js file
     vi Input.js
@@ -588,6 +644,9 @@ paste in the following code
 
     export default Input;
 
+![alt text](https://github.com/techbeast911/mern_web_stack/blob/main/img/Screenshot%202024-05-30%20125544.png)
+
+
 to make use of axis which is a promise base http client for the browser and node.js you need to cd into your client from terminal
 and run yarn add axios or npm install axios.
 
@@ -628,6 +687,9 @@ paste the following code in it
     }
 
     export default ListTodo;
+
+![alt text](https://github.com/techbeast911/mern_web_stack/blob/main/img/Screenshot%202024-05-30%20130016.png)
+
 
 then in your Todo.js paste
 
@@ -680,6 +742,10 @@ then in your Todo.js paste
     }
 
     export default Todo;
+
+![alt text](https://github.com/techbeast911/mern_web_stack/blob/main/img/Screenshot%202024-05-30%20130016.png)
+
+
 
 we need to make little adjustments to your react code.Delete the logo and adjust our App.js
 
@@ -817,6 +883,8 @@ in the src directory open the index.css
     monospace;
     }
 
+![alt text](https://github.com/techbeast911/mern_web_stack/blob/main/img/Screenshot%202024-05-30%20131359.png)
+
 
 go to the Todo directory
  cd ../..
@@ -826,3 +894,4 @@ run
   npm run dev
 
 our todo app is now ready
+![alt text](https://github.com/techbeast911/mern_web_stack/blob/main/img/Screenshot%202024-05-30%20131530.png)
